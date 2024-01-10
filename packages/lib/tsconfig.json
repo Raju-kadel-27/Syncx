@@ -1,0 +1,8 @@
+{
+  "extends": "@syncx/typescript-config/react-library.json",
+  "compilerOptions": {
+    "types": ["@syncx/typescript-config/process-env.d.ts"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}

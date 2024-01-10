@@ -1,0 +1,32 @@
+{
+  "name": "@syncx/root",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean && rimraf node_modules",
+    "prisma:generate": "dotenv -e .env -- npm run prisma:generate -w @syncx/prisma",
+    "prisma:migrate-dev": "dotenv -e .env -- npm run prisma:migrate-dev -w @syncx/prisma",
+    "prisma:migrate-deploy": "dotenv -e .env -- npm run prisma:migrate-deploy -w @syncx/prisma",
+    "prisma:db-push": "dotenv -e .env -- npm run prisma:db-push -w @syncx/prisma",
+    "prisma:studio": "dotenv -e .env -- npm run prisma:studio -w @syncx/prisma"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

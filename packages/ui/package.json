@@ -1,0 +1,37 @@
+{
+  "name": "@syncx/ui",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "files": [
+    "components/",
+    "lib/"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "link:fix": "eslint . --fix",
+    "clean": "rimraf node_modules"
+  },
+  "devDependencies": {
+    "@syncx/eslint-config": "*",
+    "@syncx/typescript-config": "*",
+    "@syncx/tailwind-config": "*",
+    "@turbo/gen": "^1.10.12",
+    "@types/eslint": "^8.44.7",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.53.0",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.300.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

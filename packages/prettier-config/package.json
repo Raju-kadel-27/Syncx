@@ -1,0 +1,14 @@
+{
+  "name": "@syncx/prettier-config",
+  "version": "0.0.0",
+  "main": "./index.cjs",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-sql": "^0.18.0",
+    "prettier-plugin-tailwindcss": "^0.5.9"
+  }
+}

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: experiment-db
+      POSTGRES_USER: experiment-user
+      POSTGRES_PASSWORD: experiment-password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./packages/postgres_db:/var/lib/postgresql/data
+
+

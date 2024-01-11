@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Post" ALTER COLUMN "title" DROP NOT NULL,
+ALTER COLUMN "authorName" DROP NOT NULL;
